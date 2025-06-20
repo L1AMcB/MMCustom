@@ -1,0 +1,130 @@
+/* Apply padding to the entire module */
+.MMM-GoogleTasksTouch {
+    padding-left: 30px;
+    padding-top: 40px;
+    font-size: 22px; /* Increased base font size */
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.8),
+        -1px -1px 2px rgba(0,0,0,0.5),
+        1px 1px 2px #000000cc; /* Added text shadow to match weather modules */
+}
+
+/* Style the module header to match the clock date */
+.MMM-GoogleTasksTouch .module-header {
+    font-size: 28px !important; /* Increased font size for the header */
+    font-weight: normal; /* Adjust weight to match clock style */
+    margin-bottom: 15px; /* Add some space below the header */
+    padding-bottom: 0; /* Remove default padding if any */
+    border-bottom: none; /* Remove default border if any */
+    color: #999 !important;
+    text-transform: none !important;
+}
+
+.MMM-GoogleTasksTouch .container {
+    display: grid;
+    /* Removed transform: translateY(-.6em); to fix vertical alignment */
+}
+
+/* This is a wrapper for each task row to enable animation */
+.MMM-GoogleTasksTouch .task-wrapper {
+    /* Each task wrapper is now a subgrid spanning all columns */
+    display: grid;
+    grid-column: 1 / -1; 
+    grid-template-columns: 1fr auto;
+    /* The transition is now on the wrapper itself */
+    transition: transform 0.5s cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* Updated item styling */
+.MMM-GoogleTasksTouch .item {
+    text-align: left;
+    padding-bottom: .25em;
+    /* Removed transition from individual items as it's now on the parent */
+}
+
+.MMM-GoogleTasksTouch .item.clickable {
+    cursor: pointer;
+    padding: 8px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.MMM-GoogleTasksTouch .item.clickable:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.MMM-GoogleTasksTouch .item.date {
+    padding-left: 1.7em;
+    text-align: right;
+}
+
+.MMM-GoogleTasksTouch .item.notes {
+    padding-left: .95em;
+    font-size: 0.8em;
+    padding-bottom: 0;
+}
+
+/* Make 'light' text match the 'dimmed' style from custom.css for consistency */
+.MMM-GoogleTasksTouch .light {
+    color: rgba(255,255,255,0.8);
+}
+
+
+.MMM-GoogleTasksTouch .item.child {
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+.MMM-GoogleTasksTouch .fa {
+    vertical-align: middle;
+    padding-bottom: .25em;
+    padding-right: .25em;
+    font-size: 0.60em;
+}
+
+.MMM-GoogleTasksTouch .completed-icon {
+    color: #4CAF50;
+}
+
+.MMM-GoogleTasksTouch .todo-icon {
+    color: #fff;
+}
+
+.MMM-GoogleTasksTouch .item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Completed tasks section styling */
+.MMM-GoogleTasksTouch .completed-section {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 10px;
+}
+
+.MMM-GoogleTasksTouch .section-separator {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    margin: 15px 0;
+    grid-column: 1 / -1;
+}
+
+/* Progress Bar Styling */
+.MMM-GoogleTasksTouch .progress-bar-container {
+    grid-column: 1 / -1; /* Span across both columns */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 8px;
+    overflow: hidden; /* Ensures the fill stays within the rounded corners */
+}
+
+.MMM-GoogleTasksTouch .progress-bar-fill {
+    height: 100%;
+    background-color: #4CAF50; /* Green color to match completed icon */
+    border-radius: 5px;
+    transition: width 0.5s cubic-bezier(0.2, 0, 0, 1);
+}
