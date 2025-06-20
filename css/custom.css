@@ -1,0 +1,99 @@
+.weather .normal.medium .wi-strong-wind,
+.weather .normal.medium .wi-wind,
+.weather .normal.medium sup,
+.weather .normal.medium span:nth-of-type(2) {
+    display: none;
+}
+
+/* Hide seconds in clock */
+.clock .time .seconds {
+    display: none !important;
+}
+
+.weather .normal.medium .wi-strong-wind,
+.weather .normal.medium .wi-wind,
+.weather .normal.medium sup,
+.weather .normal.medium span:nth-of-type(2),
+.weather .normal.medium .wi-sunset,
+.weather .normal.medium .wi-sunset + span {
+    display: none;
+}
+
+/* Hide the forecast header (America/Los Angeles) - module_3_weather */
+#module_3_weather .module-header {
+    display: none !important;
+}
+
+#module_3_weather {
+    margin-top: -20px !important;
+}
+
+#module_2_weather {
+    margin-top: -20px !important;
+}
+
+/* Change America/Los Angeles to Mountain View, CA in current weather - module_2_weather */
+#module_2_weather .module-header {
+    font-size: 0 !important;
+}
+
+#module_2_weather .module-header::after {
+    content: "Mountain View, CA";
+    font-size: 15px !important;
+    display: block;
+    font-weight: normal;
+}
+
+/* Hide sunrise icon and time */
+.weather .normal.medium .wi-sunrise,
+.weather .normal.medium .wi-sunrise + span {
+    display: none;
+}
+
+/* Hide the forecast header (removes "AMERICA/LOS_ANGELES" from 5-day forecast) */
+.weatherforecast .module-header {
+    display: none !important;
+}
+
+/* Change the location text in current weather from "AMERICA/LOS_ANGELES" to "Mountain View, CA" */
+.currentweather .dimmed.light {
+    font-size: 0 !important;
+}
+
+.currentweather .dimmed.light::after {
+    content: "Mountain View, CA";
+    font-size: 15px !important;
+    display: block;
+}
+
+/* Add padding to top right region modules */
+.region.top.right {
+    padding-top: 30px !important;
+    padding-right: 30px !important;
+}
+
+/* Text shadows for better visibility on dynamic backgrounds */
+.module-content,
+.module-header,
+.clock,
+.weather,
+.currentweather,
+.weatherforecast {
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.8),
+        -1px -1px 2px rgba(0,0,0,0.5),
+        1px 1px 2px rgba(0,0,0,0.8) !important;
+    color: white !important;
+}
+
+.dimmed {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.compliments .xlarge {
+    font-size: 75px !important;
+  }
+
+.module.compliments {
+    margin-bottom: 12px !important;
+}
