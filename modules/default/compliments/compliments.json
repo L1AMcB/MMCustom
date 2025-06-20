@@ -1,0 +1,121 @@
+{
+    "morning": [
+        "Good morning, Liam!",
+        "Enjoy your day, Liam!",
+        "How was your sleep?"
+    ],
+    "afternoon": [
+        "Hello, beauty!",
+        "You're looking great!",
+        "Hope you're having a good day!"
+    ],
+    "evening": [
+        "Wow, you look nice!",
+        "Time to relax, Liam",
+        "Good evening, Liam"
+    ],
+    "rain": [
+        "Don't forget your umbrella!",
+        "It's a cozy day to be inside."
+    ],
+    "snow": [
+        "Snowy outside, Liam!",
+        "Let it snow, let it snow, let it snow."
+    ],
+    "clear": [
+        "It's a beautiful day!",
+        "Perfect weather to be outside."
+    ],
+    "clouds": [
+        "A little cloudy, but still a great day."
+    ],
+    "fog": [
+        "Zombie weather."
+    ],
+    "showers": [
+        "It's pouring out... or is it?"
+    ],
+    "thunderstorm": [
+        "Thunderstorms are fun!"
+    ],
+    "night-rain": [
+        "It's raining outside, Liam"
+    ],
+    "night-snow": [
+        "Snowy outside, Liam!"
+    ],
+    "night-showers": [
+        "It's pouring outside, Liam"
+    ],
+    "night-thunderstorm": [
+        "Thunderstorms are fun!"
+    ],
+    "night-clear": [
+        "It's a clear night, Liam"
+    ],
+    "night-cloudy": [
+        "It's a cloudy night, Liam"
+    ],
+    "special_dates": {
+        "....-01-01": [
+            "Happy New Year!"
+        ],
+        "....-02-14": [
+            "Happy Valentine's Day!"
+        ],
+        "....-03-17": [
+            "Happy St. Patrick's Day!"
+        ],
+        "....-04-01": [
+            "Happy April Fools' Day!",
+            "Don't get pranked!"
+        ],
+        "....-06-19": [
+            "Happy Juneteenth!"
+        ],
+        "....-07-04": [
+            "Happy Independence Day!",
+            "Happy Fourth of July!"
+        ],
+        "....-10-31": [
+            "Happy Halloween!",
+            "Time for some spooky fun!"
+        ],
+        "....-11-11": [
+            "Happy Veterans Day.",
+            "Thank you for your service."
+        ],
+        "....-12-24": [
+            "'Twas the night before Christmas..."
+        ],
+        "....-12-25": [
+            "Merry Christmas!",
+            "Happy Holidays!"
+        ],
+        "....-12-31": [
+            "Happy New Year's Eve!",
+            "Get ready for the countdown!"
+        ],
+        "....-01-10": [
+            "Happy Birthday, Liam!"
+        ],
+        "....-05-11": [
+            "Happy Birthday, Elizabeth!"
+        ],
+        "....-01-03": [
+            "Happy Birthday, Mom!"
+        ],
+        "....-08-30": [
+            "Happy Birthday, Dad!"
+        ],
+        "....-06-02": [
+            "Happy Birthday, Fiona!"
+        ],
+        "....-06-25": [
+            "Happy Birthday, Tiana!"
+        ],
+        "....-03-20": [
+            "Happy Birthday, Elena!"
+        ]
+    }
+}
