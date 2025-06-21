@@ -14,11 +14,6 @@ html {
     padding: 0;
 }
 
-.region {
-    width: 100% !important;
-    height: 100% !important;
-}
-
 
 .weather .normal.medium .wi-strong-wind,
 .weather .normal.medium .wi-wind,
