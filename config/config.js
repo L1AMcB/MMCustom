@@ -36,11 +36,13 @@ let config = {
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 	timeFormat: 12,
 	units: "imperial",
-
-    // electronOptions: {
-    //     width: 1280,
-    //     height: 720,
-    // },
+    
+    electronOptions: {
+        width: 1280,
+        height: 720,
+        x: 0,
+        y: 0
+    },
 
 	modules: [
         {
