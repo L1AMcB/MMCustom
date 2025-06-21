@@ -5,6 +5,8 @@ body {
     height: 100vh !important;
     overflow: hidden;
     background-size: cover !important;
+    transform: scale(1.15) !important;
+    transform-origin: center center !important;
 }
 
 html {
@@ -14,6 +16,26 @@ html {
     padding: 0;
 }
 
+/* Force larger clock text and fix rendering */
+.clock {
+    font-size: 120% !important;
+    line-height: 1.2 !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+.clock .time {
+    font-size: 110% !important;
+    font-weight: bold !important;
+    letter-spacing: 0.05em !important;
+}
+
+/* Fix font rendering issues */
+* {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
 
 .weather .normal.medium .wi-strong-wind,
 .weather .normal.medium .wi-wind,
@@ -43,10 +65,12 @@ html {
 
 #module_3_weather {
     margin-top: -20px !important;
+    font-size: 110% !important;
 }
 
 #module_2_weather {
     margin-top: -20px !important;
+    font-size: 110% !important;
 }
 
 /* Change America/Los Angeles to Mountain View, CA in current weather - module_2_weather */
@@ -56,7 +80,7 @@ html {
 
 #module_2_weather .module-header::after {
     content: "Mountain View, CA";
-    font-size: 15px !important;
+    font-size: 17px !important;
     display: block;
     font-weight: normal;
 }
@@ -79,7 +103,7 @@ html {
 
 .currentweather .dimmed.light::after {
     content: "Mountain View, CA";
-    font-size: 15px !important;
+    font-size: 17px !important;
     display: block;
 }
 
@@ -108,9 +132,14 @@ html {
 }
 
 .compliments .xlarge {
-    font-size: 75px !important;
-  }
+    font-size: 85px !important;
+}
 
 .module.compliments {
     margin-bottom: 12px !important;
+}
+
+/* Scale all modules slightly larger */
+.module {
+    transform: scale(1.05) !important;
 }

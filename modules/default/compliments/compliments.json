@@ -2,7 +2,7 @@
     "morning": [
         "Good morning, Liam!",
         "Enjoy your day, Liam!",
-        "How was your sleep?"
+        "Hot girlfriend, life is good!"
     ],
     "afternoon": [
         "Hello, beauty!",
@@ -10,7 +10,7 @@
         "Hope you're having a good day!"
     ],
     "evening": [
-        "Wow, you look nice!",
+        "Looking good, Liam!",
         "Time to relax, Liam",
         "Good evening, Liam"
     ],
@@ -27,10 +27,12 @@
         "Perfect weather to be outside."
     ],
     "clouds": [
-        "A little cloudy, but still a great day."
+        "A little cloudy, but still a great day.",
+        "Cloudy outside, Liam!"
     ],
     "fog": [
-        "Zombie weather."
+        "Zombie weather.",
+        "Fogggggggggggggg"
     ],
     "showers": [
         "It's pouring out... or is it?"
